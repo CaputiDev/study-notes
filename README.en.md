@@ -2,7 +2,7 @@
 
 [![pt-br](https://img.shields.io/badge/lang-pt_br-green.svg)](./README.md)
 
-This repository contains my "Digital Garden" — a public place where I collect notes about programming, algorithms, book summaries and general software engineering.
+This repository contains my "Digital Garden"  a public place where I collect notes about programming, algorithms, book summaries and general software engineering.
 
 The site is powered by Docusaurus and published to GitHub Pages.
 
@@ -53,16 +53,16 @@ npm run deploy
 
 ## Important folders
 
-* `docs/` — notes and study materials (.md files)
-* `src/pages/` — homepage and custom components/styles
-* `static/img/` — static images (logos, diagrams, backgrounds)
-* `docusaurus.config.js` — global site configuration (navbar, title, links)
+* `docs/` notes and study materials (.md files)
+* `src/pages/` homepage and custom components/styles
+* `static/img/` static images (logos, diagrams, backgrounds)
+* `docusaurus.config.js` global site configuration (navbar, title, links)
 
 ---
 
 ## License
 
-This project is licensed under the MIT License — see `LICENSE` for details.
+This project is licensed under the MIT License see `LICENSE` for details.
 
 Built with Docusaurus (Meta Platforms, Inc.).
 
