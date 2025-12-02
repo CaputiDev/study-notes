@@ -31,7 +31,6 @@ const config = {
       ({
         docs: {
           sidebarPath: './sidebars.js',
-          editUrl: 'https://github.com/CaputiDev/study-notes',
         },
         blog: false, 
         theme: {
