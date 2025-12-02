@@ -6,16 +6,61 @@ import Layout from '@theme/Layout';
 import Heading from '@theme/Heading';
 import styles from './index.module.css';
 
-// Componente do Cabeçalho
+const FeatureList = [
+  {
+    title: 'Resumos de Livros',
+    description: (
+      <>
+        Compilações da minha experiência como leitor, especialmente de obras técnicas, 
+        focando no que realmente importa.
+      </>
+    ),
+  },
+  {
+    title: 'Documentação Prática',
+    description: (
+      <>
+        Soluções práticas, algoritmos que desenvolvi e padrões de projeto que utilizo
+        nos meus estudos e desenvolvimentos.
+      </>
+    ),
+  },
+  {
+    title: 'Diário de Estudos',
+    description: (
+      <>
+        Anotações sobre meu aprendizado, erros que cometi (e como resolvi)
+        e minha evolução. Para consultas futuras. 
+      </>
+    ),
+  },
+  
+];
+
+function Feature({title, description}) {
+  return (
+    <div className={clsx('col col--4')}>
+      <div className="text--center padding-horiz--md padding-vert--md">
+        <div className={styles.featureCard}>
+          <Heading as="h3">{title}</Heading>
+          <p>{description}</p>
+        </div>
+      </div>
+    </div>
+  );
+}
+
 function HomepageHeader() {
   const {siteConfig} = useDocusaurusContext();
   return (
     <header className={clsx('hero hero--primary', styles.heroBanner)}>
       <div className="container">
         <Heading as="h1" className="hero__title">
-          {siteConfig.title}
+          Study Notes
         </Heading>
-        <p className="hero__subtitle">{siteConfig.tagline}</p>
+        <p className="hero__subtitle">
+          Explorando códigos, algoritmos e novas tecnologias.
+        </p>
         <div className={styles.buttons}>
           <Link
             className="button button--secondary button--lg"
@@ -28,43 +73,42 @@ function HomepageHeader() {
   );
 }
 
-// Página Principal
 export default function Home() {
   const {siteConfig} = useDocusaurusContext();
   return (
     <Layout
       title={`Início`}
-      description="Meus resumos e anotações de estudo">
+      description="Notas de estudo e documentação pessoal">
       
       <HomepageHeader />
       
       <main>
         {}
-        <div className="container padding--xl">
-          <div className="row">
-            <div className="col col--8 col--offset-2">
-              
-              <h2>Sobre este projeto</h2>
-              <p>
-                Seja bem-vindo(a) ao meu espaço de documentação pessoal. 
-                A ideia deste site é transformar meus estudos em algo tangível e consultável.
-              </p>
-              
-              <p>
-                Aqui você encontrará anotações sobre meus estudos téoricos na programação, algoritmos, estruturas de dados
-                e outras tecnologias que estou explorando. Ao escrever o que estou estudando retenho melhor o conhecimento e posso compartilhar em uma ambiente aberto.
-              </p>
-
-              <h3>O que você vai encontrar:</h3>
-              <ul>
-                <li>Resumos de livros.</li>
-                <li>Exemplos de códigos.</li>
-                <li>Anotações dos meus estudos pessoais.</li>
-              </ul>
-
+        <div className={styles.aboutSection}>
+          <div className="container">
+            <div className="row">
+              <div className="col col--8 col--offset-2 text--center">
+                <h2>O propósito deste lugar</h2>
+                <p className="text--lg">
+                  Acredito que escrever é a melhor forma de consolidar o aprendizado. 
+                  Este site não é apenas um blog, é <b>a documentação da minha evolução como programador</b>. 
+                  A ideia é transformar meus estudos em algo tangível e consultável.
+                </p>
+              </div>
             </div>
           </div>
         </div>
+
+        {/* Seção de Cards (Features) */}
+        <section className={styles.features}>
+          <div className="container">
+            <div className="row">
+              {FeatureList.map((props, idx) => (
+                <Feature key={idx} {...props} />
+              ))}
+            </div>
+          </div>
+        </section>
       </main>
     </Layout>
   );

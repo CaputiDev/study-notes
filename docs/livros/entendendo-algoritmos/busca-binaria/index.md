@@ -1,7 +1,14 @@
+import CodeBlock from '@theme/CodeBlock';
+import CodigoFonte from '!!raw-loader!./busca-binaria.py';
+
 # Busca Binária
 
-Aqui está meu resumo...
+Em andamento...
 
 ## Capítulos
 
-[Código-exemplo](source-code.md)
+### [Código Exemplo](busca-binaria.py)
+
+<CodeBlock language="python" title="busca-binaria.py">
+  {CodigoFonte}
+</CodeBlock>
