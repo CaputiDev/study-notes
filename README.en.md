@@ -1,4 +1,4 @@
-# Study Notes
+# Study Notes - CaputiDev
 
 [![pt-br](https://img.shields.io/badge/lang-pt_br-green.svg)](./README.md)
 
