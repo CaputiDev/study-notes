@@ -11,7 +11,7 @@ const FeatureList = [
     title: 'Resumos de Livros',
     description: (
       <>
-        Compilações da minha experiência como leitor, especialmente de obras técnicas, 
+        Compilações da minha experiência como leitor, especialmente de obras técnicas,
         focando no que realmente importa.
       </>
     ),
@@ -30,14 +30,14 @@ const FeatureList = [
     description: (
       <>
         Anotações sobre meu aprendizado, erros que cometi (e como resolvi)
-        e minha evolução. Para consultas futuras. 
+        além de registrar minha evolução.
       </>
     ),
   },
-  
+
 ];
 
-function Feature({title, description}) {
+function Feature({ title, description }) {
   return (
     <div className={clsx('col col--4')}>
       <div className="text--center padding-horiz--md padding-vert--md">
@@ -51,7 +51,7 @@ function Feature({title, description}) {
 }
 
 function HomepageHeader() {
-  const {siteConfig} = useDocusaurusContext();
+  const { siteConfig } = useDocusaurusContext();
   return (
     <header className={clsx('hero hero--primary', styles.heroBanner)}>
       <div className="container">
@@ -74,32 +74,38 @@ function HomepageHeader() {
 }
 
 export default function Home() {
-  const {siteConfig} = useDocusaurusContext();
+  const { siteConfig } = useDocusaurusContext();
   return (
     <Layout
       title={`Início`}
       description="Notas de estudo e documentação pessoal">
-      
+
       <HomepageHeader />
-      
+
       <main>
-        {}
         <div className={styles.aboutSection}>
           <div className="container">
             <div className="row">
               <div className="col col--8 col--offset-2 text--center">
                 <h2>O propósito deste lugar</h2>
+
                 <p className="text--lg">
-                  Acredito que escrever é a melhor forma de consolidar o aprendizado. 
-                  Este site não é apenas um blog, é <b>a documentação da minha evolução como programador</b>. 
+                  Este site não é apenas um blog, é <b>a documentação da minha evolução como programador</b>.
                   A ideia é transformar meus estudos em algo tangível e consultável.
+                  <p>Esse local é considerado um{" "}
+                  <span
+                    className={styles.tooltip}
+                    data-text='Um espaço onde ideias e anotações são plantadas, cultivadas e crescem com o tempo, sem a pressão de serem artigos "profissionais".'>
+                    Digital Garden
+                  </span>
+                  
+                  , onde cada aprendizado é uma semente plantada.
+                </p>
                 </p>
               </div>
             </div>
           </div>
         </div>
-
-        {/* Seção de Cards (Features) */}
         <section className={styles.features}>
           <div className="container">
             <div className="row">
