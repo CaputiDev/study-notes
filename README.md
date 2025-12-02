@@ -42,10 +42,10 @@ git push
 
 Este é o comando que realmente atualiza o site caputidev.github.io. Sem isso, o site online não muda.
 
-No Terminal
+uso no Powershell
 
 ```bash
-GIT_USER=CaputiDev npm run deploy
+$env:GIT_USER="CaputiDev"; npm run deploy
 ```
 
 ### Estrutura de Pastas Importante
