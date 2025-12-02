@@ -8,45 +8,47 @@ O site é construído com [Docusaurus](https://docusaurus.io/) e hospedado no Gi
 
 ---
 
-## Como Rodo e atualizo este projeto
+## Como utilizar este projeto
 
 1.  **Instalar dependências** (apenas na primeira vez ou se apagar a pasta node_modules):
+
     ```bash
     npm install
     ```
 
 2.  **Iniciar o servidor local**:
+
     ```bash
     npm start
     ```
-    *Isso abrirá o site em `http://localhost:3000`. As alterações que você fizer nos arquivos `.md` aparecem na hora.*
+
+    >*Isso abrirá o site em `http://localhost:3000`. As alterações que você fizer nos arquivos `.md` aparecem na hora.*
 
 ---
 
-## FLUXO DE TRABALHO: Como Atualizo o Site
+## Meu fluxo de trabalho
 
 ### 1. Criar e Testar
-Escreva seus resumos na pasta `docs/` e verifique se ficou bom usando o `npm start`.
+
+Escrevo meus resumos na pasta [`docs/`](./docs/) e verifico se ficou bom usando o `npm start`.
 
 ### 2. Salvar o Código
-Isso salva o histórico das suas edições e garante que você não perca os arquivos originais.
-*(Faça isso no terminal, após parar o servidor com Ctrl+C)*
 
 ```bash
 git add .
-git commit -m "Escreva aqui o que você mudou (ex: Adicionei resumo de Busca Binária)"
+git commit -m "docs: adciona nova secao nas anotacoes"
 git push
 ```
 
 ### 3. Publicar (Deploy)
 
-Este é o comando que realmente atualiza o site caputidev.github.io. Sem isso, o site online não muda.
+Após salvar as alterações no meu ambiente local, publico as mudanças no site online.
 
-uso no Powershell
-
-```bash
+```PowerShell
 $env:GIT_USER="CaputiDev"; npm run deploy
 ```
+
+> Dependendo do terminal que usar a síntaxe pode ser diferente, esse comando específico funciona no PowerShell.
 
 ### Estrutura de Pastas Importante
 
