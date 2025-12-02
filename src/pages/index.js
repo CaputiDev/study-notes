@@ -19,7 +19,7 @@ function HomepageHeader() {
         <div className={styles.buttons}>
           <Link
             className="button button--secondary button--lg"
-            to="/docs/category/entendendo-algoritmos">
+            to="/docs/category/livros">
             Começar a Ler 📚
           </Link>
         </div>
@@ -39,14 +39,14 @@ export default function Home() {
       <HomepageHeader />
       
       <main>
-        {/* Seção de Explicação do Conceito */}
+        {}
         <div className="container padding--xl">
           <div className="row">
             <div className="col col--8 col--offset-2">
               
               <h2>Sobre este projeto</h2>
               <p>
-                Seja bem-vindo ao meu espaço de documentação pessoal (Digital Garden). 
+                Seja bem-vindo(a) ao meu espaço de documentação pessoal. 
                 A ideia deste site é transformar meus estudos em algo tangível e consultável.
               </p>
               
