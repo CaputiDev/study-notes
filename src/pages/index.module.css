@@ -3,6 +3,25 @@
   text-align: center;
   position: relative;
   overflow: hidden;
+
+  background-image: linear-gradient(rgba(0, 0, 0, 0.6), rgba(0, 0, 0, 0.6)), url('../../static/img/hero-background.png');
+
+  background-size: cover; 
+  
+  background-position: center;
+  
+  background-attachment: fixed;
+}
+.heroBanner h1 {
+  color: #ffffff; 
+  font-weight: bold;
+  text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.8);
+}
+
+.heroBanner p {
+  color: #f0f0f0;
+  font-size: 1.5rem; 
+  text-shadow: 1px 1px 3px rgba(0, 0, 0, 0.8); 
 }
 
 @media screen and (max-width: 996px) {
@@ -16,3 +35,4 @@
   align-items: center;
   justify-content: center;
 }
+

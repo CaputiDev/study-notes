@@ -4,7 +4,7 @@ import {themes as prismThemes} from 'prism-react-renderer';
 /** @type {import('@docusaurus/types').Config} */
 const config = {
   title: 'Study Notes',
-  tagline: 'Meus resumos de estudo',
+  tagline: 'Minhas melhores anotações',
   favicon: 'img/favicon.ico',
 
   future: {
@@ -48,10 +48,11 @@ const config = {
         respectPrefersColorScheme: true,
       },
       navbar: {
-        title: 'Study Notes',
+        title: 'Ínicio',
         logo: {
           alt: 'My Site Logo',
           src: 'img/logo.svg',
+          srcDark: 'img/logo_dark.png',
         },
         items: [
           {
@@ -61,7 +62,7 @@ const config = {
             label: 'Anotações',
           },
           {
-            href: 'https://github.com/CaputiDev/study-notes',
+            href: 'https://github.com/CaputiDev/',
             label: 'GitHub',
             position: 'right',
           },
