@@ -45,7 +45,7 @@ git push
 Após salvar as alterações no meu ambiente local, publico as mudanças no site online.
 
 ```Bash
-npm run deploy
+$env:GIT_USER="GIT_USERNAME(Exemplo: "CaputiDev")"; npm run deploy
 ```
 
 ### Estrutura de Pastas Importante
