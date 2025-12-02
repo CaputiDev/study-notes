@@ -62,7 +62,7 @@ const config = {
             label: 'Anotações',
           },
           {
-            href: 'https://github.com/CaputiDev/',
+            href: 'https://github.com/CaputiDev/study-notes',
             label: 'GitHub',
             position: 'right',
           },
