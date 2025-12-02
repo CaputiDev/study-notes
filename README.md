@@ -1,5 +1,7 @@
 # Study Notes - CaputiDev
 
+[![en](https://img.shields.io/badge/lang-en-red.svg)](./README.en.md)
+
 Este é o repositório oficial do meu **Digital Garden** (Jardim Digital), onde documento meus estudos sobre programação, algoritmos, resumos de livros e desenvolvimento de software.
 
 O site é construído com [Docusaurus](https://docusaurus.io/) e hospedado no GitHub Pages.
@@ -10,19 +12,19 @@ O site é construído com [Docusaurus](https://docusaurus.io/) e hospedado no Gi
 
 ## Como utilizar este projeto
 
-1.  **Instalar dependências** (apenas na primeira vez ou se apagar a pasta node_modules):
+Instalar dependências (apenas na primeira vez ou se apagar a pasta node_modules):
 
     ```bash
     npm install
     ```
 
-2.  **Iniciar o servidor local**:
+Iniciar o servidor local:
 
-    ```bash
-    npm start
-    ```
+```bash
+npm start
+```
 
-    >*Isso abrirá o site em `http://localhost:3000`. As alterações que você fizer nos arquivos `.md` aparecem na hora.*
+>*Isso abrirá o site em `http://localhost:3000`. As alterações que você fizer nos arquivos `.md` aparecem na hora.*
 
 ---
 
@@ -44,8 +46,9 @@ git push
 
 Após salvar as alterações no meu ambiente local, publico as mudanças no site online.
 
-```Bash
-$env:GIT_USER="GIT_USERNAME(Exemplo: "CaputiDev")"; npm run deploy
+```PowerShell
+$env:GIT_USER="GIT_USERNAME" # Exemplo: "CaputiDev"
+npm run deploy
 ```
 
 ### Estrutura de Pastas Importante
