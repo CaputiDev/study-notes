@@ -1,2 +1,0 @@
-# Grokking Algorithms (Entendendo Algoritmos)
-
