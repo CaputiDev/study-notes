@@ -6,7 +6,7 @@ import Layout from '@theme/Layout';
 import Heading from '@theme/Heading';
 import styles from './index.module.css';
 
-// Componente do Cabeçalho (A parte colorida com o Título)
+// Componente do Cabeçalho
 function HomepageHeader() {
   const {siteConfig} = useDocusaurusContext();
   return (
@@ -19,8 +19,7 @@ function HomepageHeader() {
         <div className={styles.buttons}>
           <Link
             className="button button--secondary button--lg"
-            // AQUI: O link para onde o botão leva (sua primeira anotação)
-            to="/docs/grokking-algorithms/busca-binaria">
+            to="/docs/category/entendendo-algoritmos">
             Começar a Ler 📚
           </Link>
         </div>
