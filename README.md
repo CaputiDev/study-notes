@@ -45,7 +45,7 @@ git push
 Após salvar as alterações no meu ambiente local, publico as mudanças no site online.
 
 ```PowerShell
-.\deploy.ps1
+$env:GIT_USER="CaputiDev"; npm run deploy
 ```
 
 > Dependendo do terminal que usar a síntaxe pode ser diferente, esse script específico funciona no PowerShell.
