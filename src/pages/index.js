@@ -57,7 +57,7 @@ export default function Home() {
 
               <h3>O que você vai encontrar:</h3>
               <ul>
-                <li>Resumos de livros (como Entendendo Algoritmos).</li>
+                <li>Resumos de livros.</li>
                 <li>Exemplos de códigos.</li>
                 <li>Anotações dos meus estudos pessoais.</li>
               </ul>

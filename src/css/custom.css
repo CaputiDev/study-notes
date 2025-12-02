@@ -21,3 +21,16 @@
   --ifm-color-primary-lightest: #1c66d4;
   --docusaurus-highlighted-code-line-bg: rgba(0, 0, 0, 0.3);
 }
+
+.button.button--secondary.button--lg {
+  background-color: #1c66d4;
+  border-color: #1c66d4;
+  color: #ffffff;
+
+  font-weight: bold;
+}
+
+.button--secondary:hover {
+  background-color: #154ba1 !important;
+  border-color: #154ba1 !important;
+}
