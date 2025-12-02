@@ -90,16 +90,14 @@ export default function Home() {
                 <h2>O propósito deste lugar</h2>
 
                 <p className="text--lg">
-                  Este site não é apenas um blog, é <b>a documentação da minha evolução como programador</b>.
-                  A ideia é transformar meus estudos em algo tangível e consultável.
                   <p>Esse local é considerado um{" "}
                   <span
-                    className={styles.tooltip}
-                    data-text='Um espaço onde ideias e anotações são plantadas, cultivadas e crescem com o tempo, sem a pressão de serem artigos "profissionais".'>
-                    Digital Garden
+                    className={styles.digitalGarden}
+                    data-text=''>
+                    Digital Garden 
                   </span>
                   
-                  , onde cada aprendizado é uma semente plantada.
+                  , o espaço onde ideias e anotações são plantadas, cultivadas e crescem com o tempo, sem a pressão de ser algo sério ou "profissional".
                 </p>
                 </p>
               </div>
